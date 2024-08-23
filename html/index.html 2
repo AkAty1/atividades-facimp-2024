@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldWideWeb: Proposta para um Projeto de Hipertexto</title>
+</head>
+<body>
+
+    <h1>WorldWideWeb: Proposta para um Projeto de Hipertexto</h1>
+
+    <p><strong>Para:</strong> PG Innocenti/ECP, G. Kellner/ECP, DO Williams/CN</p>
+    <p><strong>Cópia arquivada:</strong> R. Brun/CN, K. Gieselmann/ECP, R. Jones/ECP, T. Osborne/CN, P. Palazzi/ECP, N. Pellow/CN, B. Pollermann/CN, EM Rimmer/ECP</p>
+    <p><strong>De:</strong> T. Berners-Lee/CN, R. Cailliau/ECP</p>
+    <p><strong>Data:</strong> 12 de novembro de 1990</p>
+    <p>O documento em anexo descreve com mais detalhes um projeto de hipertexto. HyperText é uma maneira de vincular e acessar informações de vários tipos como uma rede de nós na qual o usuário pode navegar à vontade. Ele fornece uma única interface de usuário para grandes classes de informações (relatórios, notas, bancos de dados, documentação de computador e ajuda on-line). Propomos um esquema simples incorporando servidores já disponíveis no CERN.</p>
+
+    <h2>Resumo</h2>
+    <p>HyperText é uma maneira de vincular e acessar informações de vários tipos como uma rede de nós na qual o usuário pode navegar à vontade. Potencialmente, o HyperText fornece uma única interface de usuário para muitas classes grandes de informações armazenadas, como relatórios, notas, bancos de dados, documentação de computador e ajuda de sistemas on-line. Propomos a implementação de um esquema simples para incorporar vários servidores diferentes de informações armazenadas em máquinas já disponíveis no CERN, incluindo uma análise dos requisitos para necessidades de acesso à informação por experimentos.</p>
+
+    <h2>Introdução</h2>
+    <p>As atuais incompatibilidades das plataformas e ferramentas tornam impossível acessar informações existentes por meio de uma interface comum, levando a desperdício de tempo, frustração e respostas obsoletas para uma simples pesquisa de dados. Há um grande benefício potencial na integração de uma variedade de sistemas de uma forma que permita que um usuário siga links apontando de uma informação para outra. Essa formação de uma rede de nós de informação em vez de uma árvore hierárquica ou uma lista ordenada é o conceito básico por trás do HyperText.</p>
+    <p>No CERN, uma variedade de dados já está disponível: relatórios, dados de experimentos, dados de pessoal, listas de endereços de e-mail, documentação de computador, documentação de experimentos e muitos outros conjuntos de dados estão girando em discos de computador continuamente. No entanto, é impossível "pular" de um conjunto para outro de forma automática: uma vez que você descobre que o nome de Joe Bloggs está listado em uma descrição incompleta de algum software on-line, não é fácil encontrar seu endereço de e-mail atual. Normalmente, você terá que usar um método de pesquisa diferente em um computador diferente com uma interface de usuário diferente. Uma vez que você tenha localizado as informações, é difícil manter um link para elas ou fazer uma nota privada sobre elas que você poderá encontrar rapidamente mais tarde.</p>
+
+    <h2>Conceitos de Hipertexto</h2>
+    <p>Os princípios do hipertexto e sua aplicabilidade ao ambiente do CERN são discutidos mais detalhadamente em [1], um glossário de termos técnicos é fornecido em [2]. Aqui damos uma breve apresentação do hipertexto.</p>
+    <p>Um programa que fornece acesso ao mundo do hipertexto que chamamos de navegador. Ao iniciar um navegador de hipertexto em sua estação de trabalho, você primeiro verá uma página de hipertexto que é pessoal para você: suas notas pessoais, se preferir. Uma página de hipertexto tem pedaços de texto que se referem a outros textos. Essas referências são destacadas e podem ser selecionadas com um mouse (em terminais burros, elas apareceriam em uma lista numerada e a seleção seria feita inserindo um número). Quando você seleciona uma referência, o navegador apresenta o texto que é referenciado: você fez o navegador seguir um link de hipertexto.</p>
+    <p>Os textos são interligados de uma forma que se pode ir de um conceito a outro para encontrar a informação que se deseja. A rede de links é chamada de web. A web não precisa ser hierárquica e, portanto, não é necessário "subir em uma árvore" novamente antes de poder descer para um assunto diferente, mas relacionado. A web também não é completa, pois é difícil imaginar que todos os links possíveis seriam colocados por autores. No entanto, um pequeno número de links geralmente é suficiente para ir de qualquer lugar para qualquer outro lugar em um pequeno número de saltos.</p>
+    <p>Os textos são conhecidos como nós. O processo de prosseguir de nó para nó é chamado de navegação. Os nós não precisam estar na mesma máquina: links podem apontar através dos limites da máquina. Ter uma world wide web implica que algumas soluções devem ser encontradas para problemas como diferentes protocolos de acesso e diferentes formatos de conteúdo de nó. Essas questões são abordadas por nossa proposta.</p>
+    <p>Os nós podem, em princípio, também conter informações não textuais, como diagramas, imagens, som, animação etc. O termo hipermídia é simplesmente a expansão da ideia de hipertexto para essas outras mídias. Onde já existem facilidades, pretendemos permitir o intercâmbio de gráficos, mas neste projeto, nos concentramos na leitura universal de texto, em vez de gráficos.</p>
+
+    <h2>Aplicações</h2>
+    <p>A aplicação de um sistema de hipertexto universal, uma vez em vigor, cobrirá muitas áreas, como registro de documentos, ajuda on-line, documentação de projetos, esquemas de notícias e assim por diante. Seria inapropriado para nós (em vez dos responsáveis) sugerir áreas específicas, mas experimentar ajuda on-line, ajuda on-line aceleradora, assistência para operadores de centros de computação e a disseminação de informações por serviços centrais, como o escritório do usuário e as divisões CN e ECP, são candidatos óbvios. A WorldWideWeb (ou W3) pretende atender a esses serviços em toda a comunidade HEP.</p>
+
+    <h2>Âmbito: Objetivos e Não Objetivos</h2>
+    <p>O projeto operará em um certo subconjunto bem definido da área de assunto frequentemente associada à tag "Hypertext". Ele terá como objetivo:</p>
+    <ul>
+        <li>Fornecer um protocolo comum (simples) para solicitar informações legíveis por humanos armazenadas em um sistema remoto, usando redes;</li>
+        <li>Fornecer um protocolo dentro do qual as informações possam ser trocadas automaticamente em um formato comum ao fornecedor e ao consumidor;</li>
+        <li>Fornecer algum método de leitura de pelo menos texto (se não gráficos) usando uma grande proporção das telas de computador em uso no CERN;</li>
+        <li>Fornecer e manter pelo menos uma coleção de documentos, na qual os usuários podem (mas não são obrigados a) colocar seus documentos. Esta coleção incluirá muitos dados existentes;</li>
+        <li>Para fornecer uma opção de busca por palavra-chave, além da navegação seguindo referências, usando quaisquer índices novos ou existentes (como os índices CERNVM FIND). O resultado de uma busca por palavra-chave é simplesmente um documento de hipertexto que consiste em uma lista de referências a nós que correspondem às palavras-chave;</li>
+        <li>Permitir que coleções privadas de documentos gerenciados individualmente sejam vinculadas àquelas em outras coleções;</li>
+        <li>Usar software de domínio público sempre que possível, ou fazer interface com sistemas proprietários que já existem;</li>
+        <li>Fornecer o software acima gratuitamente a qualquer pessoa.</li>
+    </ul>
+    <p>O projeto não terá como objetivo:</p>
+    <ul>
+        <li>Fornecer conversões onde elas não existam entre os muitos formatos de armazenamento de documentos no CERN, embora fornecendo uma estrutura na qual tais utilitários de conversão possam se encaixar;</li>
+        <li>Forçar os usuários a usar qualquer processador de texto ou formato de marcação específico;</li>
+        <li>Pesquisar recursos multimídia sofisticados, como som e vídeo;</li>
+        <li>Usar sistemas sofisticados de autorização de rede. Os dados serão legíveis pelo mundo (literalmente), ou serão legíveis somente em um sistema de arquivos, em cujo caso o sistema de proteção do sistema de arquivos será usado para privacidade. Todo o tráfego de rede será público.</li>
+    </ul>
+
+    <h2>Análise de Requisitos</h2>
+    <p>Para garantir a resposta às necessidades reais, uma análise de requisitos para as necessidades de acesso à informação de um grande experimento do CERN será conduzida logo no início, paralelamente à primeira fase do projeto.</p>
+    <p>Esta análise será inicialmente limitada às atividades dos membros do experimento Aleph, e posteriormente será estendida a pelo menos um outro experimento. Será feita uma visão geral da geração, armazenamento e recuperação de informações, independente da forma (relatórios, notas, conjuntos de dados). Este estudo será realizado com entrevistas pessoais e questionários. Uma tentativa será feita para avaliar quantitativamente o potencial de economia de tempo e esforço devido à aplicação dos métodos HyperText. A evolução das necessidades ao longo de um período de alguns anos também será considerada.</p>
+
+    <h2>Fases</h2>
+    <p>O projeto se dividirá nas seguintes fases:</p>
+    <ul>
+        <li><strong>Fase 1:</strong> Requisitos, investigação e prototipagem (4-6 meses)</li>
+        <li><strong>Fase 2:</strong> Implementação e distribuição (6-9 meses)</li>
+        <li><strong>Fase 3:</strong> Feedback do usuário, documentação e suporte contínuo.</li>
+    </ul>
+
+</body>
+</html>
