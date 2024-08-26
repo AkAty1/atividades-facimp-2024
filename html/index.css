@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3d00af;
+    color: #333;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav ul li a button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    background-color: #000000;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar nav ul li a button:hover {
+    color: rgb(0, 186, 219)
+}
+
+.navbar a:hover {
+    color: #00e1ff;
+}
+
+.signup-panel form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-panel label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup-panel input {
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.signup-panel button {
+    font-weight: bolder;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.signup-panel button:hover {
+    background-color: #3d00af;
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: #f0f0f0;
+}
+
+.close:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form input[type="text"],
+form input[type="menssage"],
+form textarea {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    font-weight: bolder;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: black;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3d00af;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 620px;
+}
