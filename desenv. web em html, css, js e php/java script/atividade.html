@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Média, Verificação de Número e Calculadora</title>
+    <link rel="stylesheet" href="atividade.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Simples e Outras Funcionalidades</h1>
+        <div class="buttons">
+            <button onclick="calcularMedia()">Inserir Notas e Calcular Média</button>
+            <button onclick="verificarParOuImpar()">Verificar se o Número é Par ou Ímpar</button>
+            <button onclick="calculadoraSimples()">Calculadora Simples</button>
+        </div>
+    </div>
+    <script>
+        function calcularMedia() {
+            const notas = []; let soma = 0;
+            for (let i = 1; i <= 4; i++) {
+                const nota = parseFloat(prompt(`Insira a nota ${i}:`));
+                if (isNaN(nota) || nota < 0 || nota > 10) {alert("Por favor, insira um valor válido entre 0 e 10.");return;}
+                notas.push(nota);soma += nota;
+            }
+            const media = soma / notas.length;
+            if (media >= 7) {alert(`Aprovado! Sua média é ${media.toFixed(2)}`);}
+            else {alert(`Reprovado! Sua média é ${media.toFixed(2)}`);}
+        }
+
+        function verificarParOuImpar() {
+            const numero = parseInt(prompt("Insira um número:"));
+            if (isNaN(numero)) {alert("Por favor, insira um número válido.");return;}
+            if (numero % 2 === 0) {alert(`O número ${numero} é par.`);}
+            else {alert(`O número ${numero} é ímpar.`);}
+        }
+
+        function calculadoraSimples() {
+            const num1 = parseFloat(prompt("Insira o primeiro número:"));
+            const num2 = parseFloat(prompt("Insira o segundo número:"));
+            const operacao = prompt("Escolha a operação (+, -, *, /):");
+            if (isNaN(num1) || isNaN(num2)) {alert("Por favor, insira números válidos.");return;}
+            let resultado;
+            switch (operacao) {
+                case '+': resultado = num1 + num2; break;
+                case '-': resultado = num1 - num2; break;
+                case '*': resultado = num1 * num2; break;
+                case '/':
+                    if (num2 === 0) {alert("Não é possível dividir por zero."); return;}
+                    resultado = num1 / num2; break;
+                default: alert("Operação inválida. Escolha entre +, -, * ou /."); return;
+            }
+            alert(`O resultado da operação ${num1} ${operacao} ${num2} é: ${resultado}`);
+        }
+    </script>
+</body>
+</html>
