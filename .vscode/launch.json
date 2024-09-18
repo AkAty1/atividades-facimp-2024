@@ -1,5 +1,0 @@
-// Solicita ao usuário que insira seu nome
-const nome = prompt("Digite seu nome:");
-
-// Exibe uma saudação com o nome inserido
-alert("Olá, " + nome + "!");
