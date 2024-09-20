@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.calculator {
+    width: 320px;
+    background-color: darkblue;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+    text-align: right;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px;
+    background-color: black; 
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.percent {
+    color: orange;
+}
+
+.btn:hover {
+    background-color: darkgrey;
+}
+
+.operator {
+    background-color: black;
+    color: orange;
+}
+
+.operator:hover {
+    background-color: darkgrey;
+    transition: 0.2s;
+}
+
+.equal-sign {
+    background-color: black;
+    grid-column: span 1;
+    color: greenyellow;
+}
+
+.equal-sign:hover {
+    background-color: darkgrey;
+    transition: 0.3s;
+}
+
+#clear {
+    background-color: black;
+    color: red;
+}
+
+#clear:hover {
+    background-color: darkgrey;
+    transition: 0.2s;
+}
+
+#backspace {
+    background-color: black;
+    color: orange;
+}
+
+#backspace:hover {
+    background-color: darkgrey;
+}
+
+.zero {
+    grid-column: span 2;
+    background-color: black;
+    color: white;
+}
+
+.zero:hover {
+    background-color: darkgrey;
+}
