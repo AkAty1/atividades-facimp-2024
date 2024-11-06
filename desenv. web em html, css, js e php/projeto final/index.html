@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navegação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .portfolio-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-images {
+            flex: 1;
+        }
+
+        .portfolio-description {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .image-slide {
+            display: none;
+        }
+
+        .descricao h2 {
+            margin-top: 0;
+        }
+
+        .nav-buttons {
+            margin-top: 10px;
+        }
+
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+
+        .portfolios-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="logo" class="logo">
+        <div class="nav-links">
+            <a href="#home" class="btn">Home</a>
+            <a href="#categoria" class="btn">Categoria</a>
+            <a href="#contato" class="btn">Contato</a>
+            <a href="#sobre-nos" class="btn">Sobre Nós</a>
+        </div>
+        <a href="#perfil" class="btn perfil-btn">
+            <i class="fas fa-user"></i> Perfil
+        </a>
+    </nav>
+
+    <div class="banner-container">
+        <img src="baner 2.jpg" alt="banner" class="banner">
+        <div class="search-form">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit">Pesquisar</button>
+        </div>
+    </div>
+
+    <section id="portfolio">
+        <h1 id="meuTitulo">Veículos Disponíveis</h1>
+
+        <div class="portfolios-container1">
+
+            <div class="portfolio-container" id="portfolio1">
+                <div class="portfolio-images">
+                    <div class="image-slide" id="portfolio1-images">
+                        <img src="1.png" alt="Carro 1">
+                    </div>
+                    <div class="image-slide">
+                        <img src="2.jpg" alt="Carro 2">
+                    </div>
+                    <div class="image-slide">
+                        <img src="3.png" alt="Carro 3">
+                    </div>
+                    <div class="image-slide">
+                        <img src="4.png" alt="Carro 4">
+                    </div>
+                    <div class="image-slide">
+                        <img src="5.png" alt="Carro 5">
+                    </div>
+                    <div class="image-slide">
+                        <img src="6.png" alt="Carro 6">
+                    </div>
+                    <div class="image-slide">
+                        <img src="7.png" alt="Carro 7">
+                    </div>
+                    <div class="image-slide">
+                        <img src="8.png" alt="Carro 8">
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="nav-button prev" onclick="moveSlide(-1, 'portfolio1')">&#10094;</button>
+                        <button class="nav-button next" onclick="moveSlide(1, 'portfolio1')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-description" id="descricao1">  
+                <ul> 
+                    <h2>Descrição do Primeiro Portfólio</h2> 
+                    <li><b>Design:</b> Moderno e aerodinâmico, com linhas fluidas e grade frontal proeminente.</li>
+                    <li><b>Estilo:</b> Combina elegância e robustez, atraindo olhares.</li>
+                    <li><b>Interior:</b> Espaçoso e confortável, com materiais de qualidade e layout intuitivo.</li>
+                    <li><b>Tecnologia:</b> Equipado com sistema de infotainment com tela sensível ao toque.</li>
+                    <li><b>Conectividade:</b> Suporte para Apple CarPlay e Android Auto.</li>
+                    <li><b>Segurança:</b> Recursos avançados, incluindo controle de estabilidade e assistência de frenagem.</li>
+                    <li><b>Monitoramento:</b> Sistema de monitoramento de ponto cego para maior segurança.</li>
+                    <li><b>Motorização:</b> Motor eficiente de 1.6 litros, equilibrando desempenho e economia de combustível.</li>
+                    <li><b>Condução:</b> Suspensão calibrada para proporcionar uma viagem suave e confortável.</li>
+                    <li><b>Porta-malas:</b> Generoso espaço de carga, ideal para viagens e uso diário.</li>
+                    <li><b>Personalização:</b> Opções disponíveis para personalizar o veículo conforme o gosto do proprietário.</li>
+                    <li><b>Versatilidade:</b> Excelente escolha para quem busca um SUV prático e estiloso.</li>
+                </ul>
+            </div>
+            
+
+        
+        </div>
+        <div class="portfolios-container1">
+
+            <div class="portfolio-container" id="portfolio2">
+                <div class="portfolio-images">
+                    <div class="image-slide" id="portfolio1-images">
+                        <img src="9.png" alt="Carro 1">
+                    </div>
+                    <div class="image-slide">
+                        <img src="10.png" alt="Carro 2">
+                    </div>
+                    <div class="image-slide">
+                        <img src="11.png" alt="Carro 3">
+                    </div>
+                    <div class="image-slide">
+                        <img src="12.png" alt="Carro 4">
+                    </div>
+                    <div class="image-slide">
+                        <img src="13.png" alt="Carro 5">
+                    </div>
+                    <div class="image-slide">
+                        <img src="14.png" alt="Carro 6">
+                    </div>
+                    <div class="image-slide">
+                        <img src="15.png" alt="Carro 7">
+                    </div>
+                    <div class="image-slide">
+                        <img src="16.png" alt="Carro 8">
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="nav-button prev" onclick="moveSlide(-1, 'portfolio2')">&#10094;</button>
+                        <button class="nav-button next" onclick="moveSlide(1, 'portfolio2')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-description" id="descricao1">  
+                <ul> 
+                    <h2>Toyota Corolla Hatch</h2> 
+                    <li><b>Design:</b> Compacto e esportivo, com linhas elegantes e faróis modernos.</li>
+                    <li><b>Estilo:</b> Atraente e dinâmico, ideal para quem busca um hatch sofisticado.</li>
+                    <li><b>Interior:</b> Confortável, com acabamento refinado e materiais de alta qualidade.</li>
+                    <li><b>Tecnologia:</b> Sistema multimídia com tela de 8 polegadas e conectividade sem fio.</li>
+                    <li><b>Conectividade:</b> Apple CarPlay, Android Auto, Bluetooth e entradas USB.</li>
+                    <li><b>Segurança:</b> Equipado com Toyota Safety Sense, assistente de faixa e frenagem de emergência.</li>
+                    <li><b>Monitoramento:</b> Monitoramento de ponto cego e alerta de tráfego cruzado traseiro.</li>
+                    <li><b>Motorização:</b> Motor 2.0L de 177 cv, com desempenho equilibrado e baixo consumo de combustível.</li>
+                    <li><b>Condução:</b> Suspensão independente para conforto e estabilidade em diferentes condições de direção.</li>
+                    <li><b>Porta-malas:</b> Capacidade de 361 litros, com bom espaço para bagagens.</li>
+                    <li><b>Personalização:</b> Diversas opções de cores e acabamentos internos para personalização.</li>
+                    <li><b>Versatilidade:</b> Um hatch confortável, eficiente e ideal para uso urbano e viagens curtas.</li>
+
+                </ul>
+            </div>
+            
+
+        
+        </div>
+        <div class="portfolios-container1">
+
+            <div class="portfolio-container" id="portfolio3">
+                <div class="portfolio-images">
+                    <div class="image-slide" id="portfolio3-images">
+                        <img src="17.jpg" alt="Carro 1">
+                    </div>
+                    <div class="image-slide">
+                        <img src="18.jpg" alt="Carro 2">
+                    </div>
+                    <div class="image-slide">
+                        <img src="19.jpg" alt="Carro 3">
+                    </div>
+                    <div class="image-slide">
+                        <img src="20.jpg" alt="Carro 4">
+                    </div>
+                    <div class="image-slide">
+                        <img src="21.jpg" alt="Carro 5">
+                    </div>
+                    <div class="image-slide">
+                        <img src="22.jpg" alt="Carro 6">
+                    </div>
+                    <div class="image-slide">
+                        <img src="23.jpg" alt="Carro 7">
+                    </div>
+                    <div class="image-slide">
+                        <img src="24.jpg" alt="Carro 8">
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="nav-button prev" onclick="moveSlide(-1, 'portfolio3')">&#10094;</button>
+                        <button class="nav-button next" onclick="moveSlide(1, 'portfolio3')">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-description" id="descricao1">  
+                 <ul>   <h2>Peugeot 207 SW</h2>
+                    <li><b>Design:</b> Compacto e esportivo, com linhas elegantes e faróis expressivos.</li>
+                    <li><b>Motor:</b> 1.4 ou 1.6 litros, com potência entre 80 e 113 cv, conforme a versão.</li>
+                    <li><b>Consumo:</b> Média de 11 km/l na cidade e 14 km/l na estrada.</li>
+                    <li><b>Transmissão:</b> Opções de câmbio manual de 5 marchas ou automático de 4 marchas.</li>
+                    <li><b>Conectividade:</b> Sistema de som com Bluetooth e entradas USB para dispositivos.</li>
+                    <li><b>Segurança:</b> Equipado com freios ABS, airbags frontais e travamento central.</li>
+                    <li><b>Interior:</b> Acabamento confortável, com assentos ajustáveis e boa ergonomia.</li>
+                    <li><b>Porta-malas:</b> Capacidade de 270 litros, expansível com assentos traseiros rebatíveis.</li>
+                    <li><b>Suspensão:</b> Calibrada para conforto, absorvendo bem impactos urbanos.</li>
+                    <li><b>Direção:</b> Hidráulica, facilitando manobras e aumentando a estabilidade.</li>
+                    <li><b>Ar-condicionado:</b> Sistema eficiente de climatização, com ajuste de intensidade.</li>
+                    <li><b>Versatilidade:</b> Modelo prático e econômico, ideal para uso diário e viagens.</li>                  
+                 </ul>
+            </div>
+      
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Facimp Motors. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction, portfolioId) {
+            const portfolioContainer = document.getElementById(portfolioId);
+            const slides = portfolioContainer.getElementsByClassName('image-slide');
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            currentSlide += direction;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+
+            slides[currentSlide].style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const portfolios = document.getElementsByClassName('portfolio-container');
+            for (let i = 0; i < portfolios.length; i++) {
+                const slides = portfolios[i].getElementsByClassName('image-slide');
+                if (slides.length > 0) {
+                    slides[0].style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
